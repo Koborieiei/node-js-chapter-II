@@ -1,5 +1,5 @@
 import * as express from "express";
-import { db } from "../src/data-source";
+import { db } from "../src/datasource";
 import { Product } from "../src/entity/Product";
 import { Request, Response } from "express";
 import { StatusCodes } from "http-status-codes";

@@ -1,4 +1,3 @@
-import "reflect-metadata";
 import { DataSource } from "typeorm";
 
 export const db = new DataSource({
@@ -11,6 +10,6 @@ export const db = new DataSource({
   synchronize: true,
   logging: false,
   entities: ["src/entity/**/*.ts"],
-  migrations: [],
-  subscribers: [],
+  migrations: ["src/migration/*.ts"],
+  migrationsTableName: "migrations",
 });

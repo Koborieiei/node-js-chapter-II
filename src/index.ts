@@ -1,5 +1,5 @@
 import "reflect-metadata";
-import { db } from "./data-source";
+import { db } from "./datasource";
 import { productRoutes } from "../routes/product.route";
 import express = require("express");
 
