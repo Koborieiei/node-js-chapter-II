@@ -1,6 +1,5 @@
-import "reflect-metadata";
-// import { db } from "./data-source";
-// import { productRoutes } from "../routes/product.route";
+import { db } from "./data-source";
+import productRoutes from "../routes/product.route";
 const express = require("express");
 
 const app = express();

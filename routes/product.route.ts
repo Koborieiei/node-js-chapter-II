@@ -5,4 +5,4 @@ router.get("/api/product", (req, res) => {
   res.send("Waiting for code 🤓");
 });
 
-module.exports = router;
+export default router;
