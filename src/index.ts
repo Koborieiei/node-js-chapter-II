@@ -1,11 +1,8 @@
-import { db } from "./datasource";
 import productRoutes from "../routes/product.route";
 import express = require("express");
 
 const app = express();
 const PORT = 8000;
-
-db.initialize();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
