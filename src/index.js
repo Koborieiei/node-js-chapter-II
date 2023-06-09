@@ -7,8 +7,7 @@ const PORT = 8000;
 app.use(router);
 
 app.listen(PORT, () => {
-  console.log(`start server port ${PORT}`);
-  return;
+  console.log(`Server is now running on port http://localhost:${PORT}`);
 });
 
 app.get("/", (req, res) => res.send("Welcome to Node.js Chapter 2"));

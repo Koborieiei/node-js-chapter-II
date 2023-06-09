@@ -1,4 +1,8 @@
-const express = require('express')
-const router = express.Router()
+const express = require("express");
+const router = express.Router();
 
-module.exports = router
+router.get("/api/product", (req, res) => {
+  res.send("Waiting for code 🤓");
+});
+
+module.exports = router;
