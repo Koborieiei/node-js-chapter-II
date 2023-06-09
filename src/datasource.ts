@@ -7,7 +7,7 @@ export const db = new DataSource({
   username: "admin",
   password: "password",
   database: "nodeclass",
-  synchronize: true,
+  synchronize: true, // NOT ON PRODUCTION !!!!!
   logging: false,
   entities: ["src/entity/**/*.ts"],
   migrations: ["src/migration/*.ts"],
