@@ -1,8 +1,8 @@
-const express = require("express");
+import express = require("express");
 const router = express.Router();
 
-router.get("/api/product", (req, res) => {
-  res.send("Waiting for code 🤓");
+router.get("/products", (req, res) => {
+  res.send("Waiting for some code 🤓");
 });
 
 export default router;
