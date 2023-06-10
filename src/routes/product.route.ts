@@ -1,8 +1,10 @@
 import express = require("express");
+import { Product } from '../entity/product';
+import { db } from '../datasource';
 const router = express.Router();
 
 router.get("/products", (req, res) => {
-  res.send("Waiting for some code 🤓");
+  const product = new Product();
 });
 
 export default router;

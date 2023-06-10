@@ -1,8 +1,11 @@
-import productRoutes from "../routes/product.route";
+import productRoutes from "./routes/product.route";
 import express = require("express");
+import { db } from './datasource';
 
 const app = express();
 const PORT = 8000;
+
+db.initialize();
 
 app.use(productRoutes);
 
